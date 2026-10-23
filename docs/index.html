@@ -24,10 +24,10 @@
 <main>
 
 <h1>Informativa sulla privacy — FuelFinder</h1>
-<p class="meta">Ultimo aggiornamento: 21/09/2026 · Versione dell'app: 1.0.3</p>
+<p class="meta">Ultimo aggiornamento: 23/10/2026 · Versione dell'app: 1.3.0</p>
 
 <div class="summary">
-  <strong>In breve.</strong> FuelFinder funziona sul tuo telefono: la tua posizione, i tuoi preferiti, gli alert e lo storico dei prezzi restano sul dispositivo e non vengono inviati a un server di FuelFinder. Non ci sono account, pubblicità, analisi d'uso né tracciamento. Se attivi la «Modalità guida», l'app usa la posizione anche in secondo piano, ma solo mentre è accesa e solo sul telefono (sezione 2.7). L'app si collega a internet per scaricare i prezzi pubblici del MIMIT, per mostrare la mappa (OpenStreetMap), per controllare gli aggiornamenti e, se decidi di acquistare Plus, per il pagamento su marketplace-apps.com tramite PayPal. Queste connessioni sono descritte qui sotto.
+  <strong>In breve.</strong> FuelFinder funziona sul tuo telefono: la tua posizione, i tuoi preferiti, gli alert e lo storico dei prezzi restano sul dispositivo e non vengono inviati a un server di FuelFinder. Non ci sono account, pubblicità, analisi d'uso né tracciamento. Se attivi la «Modalità guida», l'app usa la posizione anche in secondo piano, ma solo mentre è accesa e solo sul telefono (sezione 2.7). L'app si collega a internet per scaricare i prezzi pubblici del MIMIT, per mostrare la mappa (OpenStreetMap), per controllare gli aggiornamenti e, se acquisti Plus, per il pagamento su marketplace-apps.com tramite PayPal e per attivare Plus (la chiave e un'impronta anonima del telefono, mai la tua posizione). Queste connessioni sono descritte qui sotto.
 </div>
 
 <h2>1. Titolare del trattamento</h2>
@@ -61,7 +61,14 @@
 <h3>2.8 Controllo degli aggiornamenti</h3>
 <p>All'avvio l'app chiede a marketplace-apps.com se esiste una versione più recente e, se sì, scarica l'APK da files.marketplace-apps.com. Queste richieste rendono visibile il tuo indirizzo IP ai server del marketplace (ospitati su Vercel e Cloudflare) e non contengono altri dati personali.</p>
 
-<h3>2.9 Attività che l'app NON svolge</h3>
+<h3>2.9 Attivazione di Plus sul telefono</h3>
+<p>La chiave vale al massimo su <strong>2 telefoni</strong>. Per far rispettare questo limite, quando la attivi l'app si collega al nostro server delle licenze (<code>licenze.hubertmontero8514.workers.dev</code>, un servizio Cloudflare Workers gestito da noi) e invia: la <strong>chiave</strong>, che al suo interno contiene l'email con cui hai pagato, il piano e la scadenza; un'<strong>impronta del telefono</strong>, cioè un codice ricavato con una funzione di hash (SHA-256) dal nome dell'app e dall'identificativo Android (ANDROID_ID), poi accorciato. <strong>L'identificativo Android non viene mai inviato in chiaro</strong> e l'impronta è diversa per ogni app.</p>
+<p>La richiesta si ripete in automatico quando l'attivazione va rinnovata, al massimo ogni 30 giorni e solo con il telefono connesso; il server risponde con un'attivazione firmata che l'app verifica anche senza connessione. Il server <strong>non conserva la tua email</strong> né la chiave in chiaro: conserva solo l'hash della chiave, l'impronta, il piano, la data di attivazione e dell'ultimo rinnovo, l'eventuale data dell'ultimo cambio di telefono (uno ogni 30 giorni) e l'hash delle chiavi bloccate (per esempio dopo un rimborso). La prova gratuita vale una sola volta per telefono. Il pulsante <strong>Disattiva su questo telefono</strong> cancella dal server la riga di quel telefono. L'identificativo Android si legge solo per questo, non per pubblicità o statistiche.</p>
+
+<h3>2.10 Versione web</h3>
+<p>FuelFinder si può usare anche dal browser (<code>marketplace-apps.com/fuelfinder/web</code>). Lì preferiti, alert e storico restano <strong>solo nel browser che usi</strong>; la posizione la chiede il browser con il suo permesso; non ci sono notifiche né Modalità guida. Un cookie tecnico ricorda che hai letto l'avviso iniziale. Se attivi Plus, la chiave si verifica sul server del marketplace, che apre una <strong>sessione</strong> legata al browser con un cookie tecnico (<code>httpOnly</code>): il server conserva l'hash del codice di sessione, l'hash della chiave, il piano e la scadenza, non la tua email; massimo <strong>2 sessioni</strong> per chiave, le sessioni scadute si cancellano entro 30 giorni.</p>
+
+<h3>2.11 Attività che l'app NON svolge</h3>
 <p>Nessun account o registrazione, nessuna pubblicità, nessuno strumento di analisi o di tracciamento, nessuna profilazione, nessuna vendita o cessione di dati, nessun backup su cloud.</p>
 
 <h2>3. Base giuridica e finalità</h2>
@@ -72,21 +79,23 @@
   <tr><td>Avvisi mentre guidi (Modalità guida, opzionale)</td><td>Posizione (sul dispositivo, anche in secondo piano)</td><td>Consenso: la accendi tu e concedi il permesso di posizione di Android (art. 6.1.a)</td></tr>
   <tr><td>Scaricare i prezzi, mostrare la mappa, controllare gli aggiornamenti</td><td>Indirizzo IP nella richiesta di rete</td><td>Esecuzione del servizio richiesto (art. 6.1.b)</td></tr>
   <tr><td>Preferiti, alert, storico, impostazioni</td><td>Dati inseriti da te, sul dispositivo</td><td>Esecuzione del servizio richiesto (art. 6.1.b)</td></tr>
-  <tr><td>Attivazione del piano a pagamento</td><td>Email, dati del pagamento (trattati da PayPal)</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
+  <tr><td>Invio della chiave e attivazione del piano a pagamento (max 2 telefoni o 2 sessioni web per chiave)</td><td>Email nella chiave, hash della chiave, impronta del telefono, date; dati del pagamento (trattati da PayPal)</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
+  <tr><td>Prevenzione abusi delle licenze (una prova per telefono, un cambio di telefono ogni 30 giorni, chiavi bloccate)</td><td>Solo hash e date</td><td>Legittimo interesse (art. 6.1.f); puoi opporti (sezione 8)</td></tr>
 </table>
 </div>
 
 <h2>4. Per quanto tempo restano i dati</h2>
 <p>I dati sul telefono restano finché non li elimini (per esempio rimuovendo un preferito o un alert) o non disinstalli l'app. L'ultima posizione conosciuta viene sostituita a ogni nuova rilevazione. Le posizioni lette dalla Modalità guida non vengono salvate. I prezzi scaricati vengono sostituiti a ogni aggiornamento.</p>
+<p>Sul server delle licenze: le attivazioni restano finché la licenza è in uso e si cancellano subito con <strong>Disattiva su questo telefono</strong>, o comunque dopo 90 giorni senza rinnovo; le attivazioni della prova gratuita 12 mesi; la data dell'ultimo cambio di telefono 60 giorni; gli hash delle chiavi bloccate finché servono.</p>
 
 <h2>5. Destinatari e trasferimenti</h2>
-<p>FuelFinder non trasferisce i tuoi dati a terzi in modo stabile. Le uniche comunicazioni sono quelle descritte sopra: MIMIT (download dei prezzi), OpenStreetMap (mappa), marketplace-apps.com (aggiornamenti e pagamento), Waze o Google Maps (solo se scegli di navigare) e PayPal (solo se acquisti). Alcuni di questi fornitori possono trattare dati anche fuori dall'Unione Europea secondo le proprie informative.</p>
+<p>FuelFinder non trasferisce i tuoi dati a terzi in modo stabile. Le uniche comunicazioni sono quelle descritte sopra: MIMIT (download dei prezzi), OpenStreetMap (mappa), marketplace-apps.com (aggiornamenti e pagamento), Waze o Google Maps (solo se scegli di navigare) e PayPal (solo se acquisti, come titolare autonomo). Per licenza, aggiornamenti e versione web ci serviamo di fornitori che trattano i dati per nostro conto (art. 28 GDPR): <strong>Cloudflare</strong> (Stati Uniti: server delle licenze, database delle attivazioni, file degli aggiornamenti), <strong>Vercel</strong> (Stati Uniti: sito marketplace-apps.com e versione web), <strong>Supabase</strong> (database nell'Unione europea, Irlanda: sessioni della versione web), <strong>Resend</strong> (Stati Uniti: email con la chiave). Quando i dati sono trattati fuori dall'Unione europea, il trasferimento si basa sulla decisione di adeguatezza per le aziende aderenti all'EU-U.S. Data Privacy Framework (decisione di esecuzione (UE) 2023/1795, art. 45 GDPR) oppure sulle clausole contrattuali tipo (art. 46 GDPR), come indicato da ciascun fornitore.</p>
 
 <h2>6. Distribuzione</h2>
 <p>FuelFinder si scarica da marketplace-apps.com come APK firmato digitalmente dallo sviluppatore. Non è distribuita tramite Google Play. Android può mostrare un avviso di «fonte sconosciuta» perché l'app non proviene dal Play Store: è normale e non indica un problema di sicurezza.</p>
 
 <h2>7. Pagamento del piano Plus</h2>
-<p>Il pagamento avviene sul sito marketplace-apps.com tramite PayPal, fuori dall'app. FuelFinder non riceve né conserva i dati della tua carta o del tuo conto PayPal. Dopo il pagamento ricevi per email una chiave di attivazione, che l'app verifica localmente, senza connessione a internet, insieme all'email che inserisci.</p>
+<p>Il pagamento avviene sul sito marketplace-apps.com tramite PayPal, fuori dall'app. FuelFinder non riceve né conserva i dati della tua carta o del tuo conto PayPal. Dopo il pagamento ricevi per email una chiave di attivazione: quando la incolli, l'app ne controlla la firma sul telefono e poi la attiva sul server delle licenze come descritto nella sezione 2.9.</p>
 
 <h2>8. I tuoi diritti</h2>
 <div class="table-wrap">

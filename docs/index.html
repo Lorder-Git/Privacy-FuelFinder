@@ -24,108 +24,149 @@
 <main>
 
 <h1>Informativa sulla privacy — FuelFinder</h1>
-<p class="meta">Ultimo aggiornamento: 23/10/2026 · Versione dell'app: 1.3.0</p>
+<p class="meta">Ultimo aggiornamento: 21/11/2026 · Versione 2.0 (app FuelFinder 1.6.0 per Android e versione web)</p>
 
 <div class="summary">
-  <strong>In breve.</strong> FuelFinder funziona sul tuo telefono: la tua posizione, i tuoi preferiti, gli alert e lo storico dei prezzi restano sul dispositivo e non vengono inviati a un server di FuelFinder. Non ci sono account, pubblicità, analisi d'uso né tracciamento. Se attivi la «Modalità guida», l'app usa la posizione anche in secondo piano, ma solo mentre è accesa e solo sul telefono (sezione 2.7). L'app si collega a internet per scaricare i prezzi pubblici del MIMIT, per mostrare la mappa (OpenStreetMap), per controllare gli aggiornamenti e, se acquisti Plus, per il pagamento su marketplace-apps.com tramite PayPal e per attivare Plus (la chiave e un'impronta anonima del telefono, mai la tua posizione). Queste connessioni sono descritte qui sotto.
+  <strong>In breve.</strong> FuelFinder funziona sul suo telefono: la sua posizione, i suoi preferiti, gli alert e lo storico dei prezzi restano sul dispositivo e non vengono inviati a un server di FuelFinder. C'è una sola eccezione, che decide Lei: se usa la <strong>Modalità percorso</strong> (piano Plus), il testo degli indirizzi che scrive, i punti di partenza e di arrivo e la sua posizione approssimativa, usata per proporre indirizzi vicini, passano dal nostro sito marketplace-apps.com al servizio OpenRouteService di HeiGIT (Germania), che calcola il tragitto (sezione 2.5). Non ci sono account, pubblicità, analisi d'uso su di Lei né tracciamento: il sito conta solo, come numeri per giorno e senza identificativi, quante volte le app controllano gli aggiornamenti e quanti aggiornamenti vengono scaricati (sezione 2.10). Se attiva la «Modalità guida», l'app usa la posizione anche in secondo piano, ma solo mentre è accesa e solo sul telefono (sezione 2.8).
 </div>
 
 <h2>1. Titolare del trattamento</h2>
-<p>Hubert Montero, sviluppatore indipendente. Contatto: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>.</p>
+<p>Hubert Montero, sviluppatore indipendente, Ariccia (RM), Italia. Contatto: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>.</p>
 
 <h2>2. Quali dati tratta l'app</h2>
 
 <h3>2.1 Posizione</h3>
-<p>L'app chiede il permesso di posizione (precisa o approssimativa) solo per cercare i distributori vicini e calcolare distanze e tempi stimati. Il calcolo avviene sul telefono. L'ultima posizione rilevata viene conservata sul dispositivo per poter mostrare i risultati anche quando il GPS non è disponibile. La posizione non viene inviata a FuelFinder. Fuori dalla Modalità guida (sezione 2.7) l'app usa la posizione solo mentre è aperta sullo schermo.</p>
+<p>L'app chiede il permesso di posizione (precisa o approssimativa) per cercare i distributori vicini e calcolare distanze e tempi stimati. Il calcolo avviene sul telefono, sul database dei prezzi già scaricato. L'ultima posizione rilevata viene conservata sul dispositivo per poter mostrare i risultati anche quando il GPS non è disponibile. Fuori dalla Modalità guida (sezione 2.8) l'app usa la posizione solo mentre è aperta sullo schermo.</p>
+<p>La posizione non viene inviata a FuelFinder né ad altri, con l'unica eccezione della Modalità percorso descritta nella sezione 2.5.</p>
 
 <h3>2.2 Prezzi dei carburanti</h3>
-<p>I prezzi e l'anagrafica degli impianti provengono dai dataset aperti del Ministero delle Imprese e del Made in Italy (MIMIT) – Osservatorio Prezzi Carburanti, rilasciati con licenza IODL 2.0. L'app li scarica da mimit.gov.it e li salva sul telefono. Il download è una normale richiesta internet: il server del MIMIT può vedere il tuo indirizzo IP, ma non riceve la tua posizione né altri dati dell'app. I prezzi sono quelli comunicati dai gestori, riferiti alle ore 8 del giorno precedente.</p>
+<p>I prezzi e l'anagrafica degli impianti provengono dai dataset aperti del Ministero delle Imprese e del Made in Italy (MIMIT) – Osservatorio Prezzi Carburanti, rilasciati con licenza IODL 2.0. L'app Android li scarica direttamente da <code>mimit.gov.it</code> e li salva sul telefono: il server del MIMIT vede il suo indirizzo IP, ma non riceve la sua posizione né altri dati dell'app. Nella versione web i file passano invece dal nostro sito (<code>marketplace-apps.com/api/fuelfinder/mimit</code>), che li prende dal nostro server su Cloudflare, dove ne resta una copia per al massimo qualche ora: in quel caso il MIMIT non vede il suo indirizzo IP. I prezzi sono quelli comunicati dai gestori, riferiti alle ore 8 del giorno precedente.</p>
 
 <h3>2.3 Preferiti, alert, storico e impostazioni</h3>
-<p>I distributori preferiti, le soglie degli alert (con la posizione in cui li hai creati), lo storico dei prezzi dei preferiti, il carburante, il raggio, il consumo medio e le altre impostazioni sono salvati solo sul dispositivo.</p>
+<p>Sono salvati solo sul dispositivo (nella versione web, solo nel browser): i distributori preferiti, le soglie degli alert con la posizione in cui li ha creati, lo storico dei prezzi dei preferiti, il carburante, il raggio, il consumo medio, il livello del serbatoio che indica Lei (con il momento in cui il serbatoio è entrato in riserva, per proporle la Modalità emergenza), la larghezza del corridoio della Modalità percorso, le impostazioni della Modalità guida e il fatto che ha già visto il tour guidato.</p>
 
 <h3>2.4 Mappa</h3>
-<p>Le mappe sono fornite da OpenStreetMap. Per disegnarle l'app richiede immagini (tile) ai server di OpenStreetMap: queste richieste rivelano il tuo indirizzo IP e, indirettamente, l'area della mappa che stai guardando. Non vengono inviati altri dati.</p>
+<p>Le mappe sono fornite da OpenStreetMap. Per disegnarle l'app richiede immagini (tile) ai server di OpenStreetMap: queste richieste rivelano il suo indirizzo IP e, indirettamente, l'area della mappa che sta guardando. Non vengono inviati altri dati.</p>
 
-<h3>2.5 Navigazione verso un distributore</h3>
-<p>Quando tocchi «Naviga», l'app apre Waze o Google Maps (o il browser, se non sono installati) passando le coordinate del distributore scelto. Da quel momento i dati sono trattati dall'app di navigazione secondo la sua informativa; FuelFinder non riceve nulla da queste app. Waze e Google Maps sono marchi dei rispettivi titolari e FuelFinder non è affiliata a essi.</p>
+<h3>2.5 Modalità percorso (indirizzi e calcolo del tragitto)</h3>
+<p>Nella Modalità percorso (piano Plus) scrive un indirizzo di partenza («Da») e uno di arrivo («A»), oppure sceglie «Usa la mia posizione» come partenza. Dalla terza lettera in poi, mentre scrive, l'app propone indirizzi in Italia; quando conferma, calcola il tragitto in auto e cerca, sul database del telefono, i distributori lungo un corridoio di 1–3 km a sua scelta.</p>
+<p>Per queste due operazioni l'app invia al nostro sito (<code>marketplace-apps.com/api/fuelfinder/indirizzi</code> per i suggerimenti, <code>marketplace-apps.com/api/fuelfinder/percorso</code> per il tragitto):</p>
+<ul>
+  <li>il testo che scrive nei campi «Da» e «A»;</li>
+  <li>se l'app conosce la sua posizione, la sua posizione attuale come punto di riferimento, per proporle prima gli indirizzi vicini a Lei;</li>
+  <li>le coordinate dei punti di partenza e di arrivo che ha scelto, che coincidono con la sua posizione se usa «Usa la mia posizione».</li>
+</ul>
+<p>Il nostro sito inoltra queste richieste al servizio OpenRouteService di <strong>HeiGIT gGmbH</strong> (Heidelberg, Germania) e restituisce la risposta all'app. La chiave di accesso al servizio resta sul nostro server. HeiGIT riceve il testo e le coordinate, ma vede l'indirizzo IP del nostro server e non il suo. Il nostro sito non salva né il testo né le coordinate. Per i suggerimenti, però, testo e coordinate fanno parte dell'indirizzo della richiesta: per questo possono comparire per breve tempo nei registri tecnici di Vercel, che ospita il sito, insieme al suo indirizzo IP. Nemmeno l'app salva il tragitto calcolato: lo mostra finché rimane nella schermata.</p>
+<p>HeiGIT tratta i dati secondo la <a href="https://heigit.org/?p=21687" target="_blank" rel="noopener">propria informativa</a>. Questa dice che i registri dei server contengono data, ora e indirizzo IP del computer che si collega (nel nostro caso il nostro server) e che possono esserci trasferimenti di dati fuori dall'Unione europea, con garanzie contrattuali. Se non vuole inviare questi dati, non usi la Modalità percorso: tutte le altre funzioni restano sul telefono.</p>
 
-<h3>2.6 Notifiche locali</h3>
-<p>Gli alert di prezzo e gli avvisi della Modalità guida sono notifiche generate dal telefono. Gli alert vengono valutati quando apri l'app dopo un aggiornamento dei dati. Nessun servizio esterno di notifiche push viene usato.</p>
+<h3>2.6 Navigazione verso un distributore</h3>
+<p>Quando tocca «Naviga», l'app apre Waze o Google Maps (o il browser, se non sono installati) passando le coordinate del distributore scelto. Da quel momento i dati sono trattati dall'app di navigazione secondo la sua informativa; FuelFinder non riceve nulla da queste app. Waze e Google Maps sono marchi dei rispettivi titolari e FuelFinder non è affiliata a essi.</p>
 
-<h3>2.7 Modalità guida (posizione in secondo piano)</h3>
-<p>La Modalità guida è una funzione del piano Plus che accendi tu, con l'interruttore nelle Impostazioni oppure toccando «Naviga» (se non lo disattivi). Finché è accesa, l'app resta in secondo piano mentre usi Waze o Google Maps e legge la tua posizione a intervalli di circa 50 metri, per avvisarti con una notifica se davanti a te, entro il raggio che scegli, c'è un distributore economico. Android ti mostra una notifica permanente per tutto il tempo in cui la posizione è in uso.</p>
-<p>Il confronto con i distributori avviene sul telefono, sul database dei prezzi già scaricato: la posizione non viene inviata a FuelFinder né ad altri, non viene registrata né conservata oltre il momento del calcolo. La Modalità guida si spegne quando la disattivi, quando l'app viene chiusa dal sistema, oppure da sola dopo 15 minuti in cui resti fermo. Puoi mettere in pausa gli avvisi con «Ho fatto il pieno»: la pausa è un'impostazione salvata sul telefono (numero di giorni e data di fine) e gli avvisi ripartono da soli alla scadenza.</p>
-<p>Alcuni telefoni chiudono le app in secondo piano per risparmiare batteria: in quel caso gli avvisi possono interrompersi. Puoi revocare in qualsiasi momento il permesso di posizione dalle impostazioni di Android.</p>
+<h3>2.7 Notifiche locali</h3>
+<p>Gli alert di prezzo (piano Plus) e gli avvisi della Modalità guida sono notifiche generate dal telefono. Gli alert vengono valutati quando apre l'app dopo un aggiornamento dei prezzi. Non viene usato nessun servizio esterno di notifiche push. Le notifiche ci sono solo nell'app Android, non nella versione web.</p>
 
-<h3>2.8 Controllo degli aggiornamenti</h3>
-<p>All'avvio l'app chiede a marketplace-apps.com se esiste una versione più recente e, se sì, scarica l'APK da files.marketplace-apps.com. Queste richieste rendono visibile il tuo indirizzo IP ai server del marketplace (ospitati su Vercel e Cloudflare) e non contengono altri dati personali.</p>
+<h3>2.8 Modalità guida (posizione in secondo piano)</h3>
+<p>La Modalità guida è una funzione del piano Plus che accende Lei, con l'interruttore nelle Impostazioni oppure toccando «Naviga» (se non lo disattiva). Finché è accesa, l'app resta in secondo piano mentre usa Waze o Google Maps e legge la sua posizione a intervalli di circa 50 metri, per avvisarla con una notifica se davanti a Lei, entro il raggio che sceglie, c'è un distributore economico. Android le mostra una notifica permanente per tutto il tempo in cui la posizione è in uso. Basta il permesso di posizione «durante l'uso dell'app», grazie al servizio in primo piano; il permesso «sempre» può concederlo Lei dalle impostazioni di Android, ma non è obbligatorio.</p>
+<p>Il confronto con i distributori avviene sul telefono, sul database dei prezzi già scaricato: la posizione non viene inviata a FuelFinder né ad altri, non viene registrata né conservata oltre il momento del calcolo. La Modalità guida si spegne quando la disattiva, quando l'app viene chiusa dal sistema, oppure da sola dopo 15 minuti in cui rimane fermo. Può mettere in pausa gli avvisi con «Ho fatto il pieno»: la pausa è un'impostazione salvata sul telefono (numero di giorni e data di fine) e gli avvisi ripartono da soli alla scadenza.</p>
+<p>Alcuni telefoni chiudono le app in secondo piano per risparmiare batteria: in quel caso gli avvisi possono interrompersi. Può revocare in qualsiasi momento il permesso di posizione dalle impostazioni di Android.</p>
 
-<h3>2.9 Attivazione di Plus sul telefono</h3>
-<p>La chiave vale al massimo su <strong>2 telefoni</strong>. Per far rispettare questo limite, quando la attivi l'app si collega al nostro server delle licenze (<code>licenze.hubertmontero8514.workers.dev</code>, un servizio Cloudflare Workers gestito da noi) e invia: la <strong>chiave</strong>, che al suo interno contiene l'email con cui hai pagato, il piano e la scadenza; un'<strong>impronta del telefono</strong>, cioè un codice ricavato con una funzione di hash (SHA-256) dal nome dell'app e dall'identificativo Android (ANDROID_ID), poi accorciato. <strong>L'identificativo Android non viene mai inviato in chiaro</strong> e l'impronta è diversa per ogni app.</p>
-<p>La richiesta si ripete in automatico quando l'attivazione va rinnovata, al massimo ogni 30 giorni e solo con il telefono connesso; il server risponde con un'attivazione firmata che l'app verifica anche senza connessione. Il server <strong>non conserva la tua email</strong> né la chiave in chiaro: conserva solo l'hash della chiave, l'impronta, il piano, la data di attivazione e dell'ultimo rinnovo, l'eventuale data dell'ultimo cambio di telefono (uno ogni 30 giorni) e l'hash delle chiavi bloccate (per esempio dopo un rimborso). La prova gratuita vale una sola volta per telefono. Il pulsante <strong>Disattiva su questo telefono</strong> cancella dal server la riga di quel telefono. L'identificativo Android si legge solo per questo, non per pubblicità o statistiche.</p>
+<h3>2.9 Modalità emergenza</h3>
+<p>La Modalità emergenza (gratuita, su tutti i piani) mostra i distributori più vicini in un raggio di 15 km, invece dei più economici: serve quando si è a secco. La apre Lei dalla schermata di ricerca, che gliela suggerisce se ha indicato il serbatoio in riserva da più di due ore. Usa solo la posizione già letta dall'app e il database dei prezzi già sul telefono: non fa richieste di rete e non funziona in secondo piano.</p>
 
-<h3>2.10 Versione web</h3>
-<p>FuelFinder si può usare anche dal browser (<code>marketplace-apps.com/fuelfinder/web</code>). Lì preferiti, alert e storico restano <strong>solo nel browser che usi</strong>; la posizione la chiede il browser con il suo permesso; non ci sono notifiche né Modalità guida. Un cookie tecnico ricorda che hai letto l'avviso iniziale. Se attivi Plus, la chiave si verifica sul server del marketplace, che apre una <strong>sessione</strong> legata al browser con un cookie tecnico (<code>httpOnly</code>): il server conserva l'hash del codice di sessione, l'hash della chiave, il piano e la scadenza, non la tua email; massimo <strong>2 sessioni</strong> per chiave, le sessioni scadute si cancellano entro 30 giorni.</p>
+<h3>2.10 Aggiornamenti dell'app</h3>
+<p>All'avvio l'app Android chiede a <code>marketplace-apps.com/api/versione/fuelfinder</code> se esiste una versione più recente. Se c'è, scarica il pacchetto passando da <code>marketplace-apps.com/api/scarica/fuelfinder</code>, che rimanda subito al file su <code>files.marketplace-apps.com</code> (Cloudflare R2). È Lei a confermare l'installazione. Queste richieste non contengono i suoi dati né identificativi del telefono o della licenza.</p>
+<p>Il sito non salva l'indirizzo IP né altri dati di queste richieste: tiene solo numeri per giorno, cioè quante volte le app hanno chiesto la versione (sono aperture, non persone) e quanti aggiornamenti sono stati scaricati, per app e versione. Da questi numeri non si può risalire a nessuno. Anche dal server delle licenze ricaviamo solo numeri complessivi per app (telefoni attivati, telefoni collegati negli ultimi 30 giorni, attivazioni e vendite per giorno), senza vedere impronte, chiavi o email. Come per ogni pagina web, i fornitori dell'infrastruttura (Vercel per il sito, Cloudflare per i file) ricevono l'indirizzo IP, il tipo di client (User-Agent) e l'orario della richiesta e li tengono nei loro registri tecnici per i tempi previsti dai loro servizi.</p>
 
-<h3>2.11 Attività che l'app NON svolge</h3>
-<p>Nessun account o registrazione, nessuna pubblicità, nessuno strumento di analisi o di tracciamento, nessuna profilazione, nessuna vendita o cessione di dati, nessun backup su cloud.</p>
+<h3>2.11 Attivazione di Plus sul telefono</h3>
+<p>La chiave vale al massimo su <strong>2 telefoni</strong>. Per far rispettare questo limite, quando la attiva l'app si collega al nostro server delle licenze (<code>licenze.hubertmontero8514.workers.dev</code>, un servizio Cloudflare Workers gestito da noi) e invia: la <strong>chiave</strong>, che al suo interno contiene l'email con cui ha pagato, il piano e la scadenza; un'<strong>impronta del telefono</strong>, cioè un codice ricavato con una funzione di hash (SHA-256) dal nome dell'app e dall'identificativo Android (ANDROID_ID), poi accorciato. <strong>L'identificativo Android non viene mai inviato in chiaro</strong> e l'impronta è diversa per ogni app.</p>
+<p>L'app rinnova l'attivazione da sola quando mancano meno di 20 giorni alla scadenza dell'attivazione, solo con il telefono connesso; il server risponde con un'attivazione firmata che l'app verifica anche senza connessione. Il server <strong>non conserva la sua email</strong> né la chiave in chiaro: conserva solo l'hash della chiave, l'impronta, il piano, la data di attivazione e dell'ultimo rinnovo, l'eventuale data dell'ultimo cambio di telefono (uno ogni 30 giorni) e l'hash delle chiavi bloccate (per esempio dopo un rimborso). La prova gratuita vale una sola volta per telefono. Il pulsante <strong>Disattiva su questo telefono</strong> cancella dal server la riga di quel telefono. L'identificativo Android si legge solo per questo, non per pubblicità o statistiche.</p>
+
+<h3>2.12 Versione web</h3>
+<p>FuelFinder si può usare anche dal browser (<code>marketplace-apps.com/fuelfinder/web</code>). Lì preferiti, alert e storico restano <strong>solo nel browser che usa</strong>; la posizione la chiede il browser con il suo permesso; i prezzi arrivano tramite il nostro sito (sezione 2.2); la Modalità percorso funziona come nell'app (sezione 2.5); non ci sono notifiche né Modalità guida. Un cookie tecnico ricorda che ha letto l'avviso iniziale. Se attiva Plus, la chiave si verifica sul server del marketplace, che apre una <strong>sessione</strong> legata al browser con un cookie tecnico (<code>httpOnly</code>). Il server conserva l'hash del codice di sessione, l'hash della chiave, il piano, la scadenza, l'email contenuta nella chiave e la data in cui la sessione è stata aperta. Le sessioni sono al massimo <strong>2</strong> per chiave (aprendone una terza, la più vecchia viene chiusa e cancellata). I dettagli sui cookie del sito sono nell'informativa di marketplace-apps.com.</p>
+<p><strong>Sessione web e recesso.</strong> La data in cui la sessione viene aperta serve anche come prova di quando ha iniziato a usare Plus: se al pagamento ha chiesto di iniziare subito e poi recede entro 14 giorni, tratteniamo solo la parte proporzionale ai giorni trascorsi dall'attivazione (art. 57, comma 3, del Codice del consumo e condizioni di vendita di marketplace-apps.com), e come attivazione nella versione web contiamo la sessione più vecchia che risulta per quella chiave. L'email contenuta nella chiave ci permette di collegare la sessione al suo acquisto. Base giuridica: esecuzione del contratto (art. 6, par. 1, lett. b, GDPR) e legittimo interesse a poter dimostrare quanta parte del servizio è stata fornita (art. 6, par. 1, lett. f). Le sessioni si cancellano 30 giorni dopo la scadenza della licenza (quelle senza scadenza dopo 400 giorni) e subito se la chiave viene bloccata dopo un rimborso per recesso.</p>
+<p><strong>Conteggio del tempo d'uso.</strong> Mentre la versione web è aperta e la scheda è in primo piano, il browser invia al sito, ogni 20 secondi, un segnale con il nome dell'app, l'etichetta del link social che ha usato per arrivare (se c'è) e un codice casuale creato per quella scheda; quando la scheda non è più visibile, il browser invia un ultimo segnale di pausa. Il segnale non contiene nulla di ciò che fa o scrive nell'app e serve solo a contare quante persone usano la versione web in quel momento e per quanto tempo (per fasce di durata). Il codice è conservato nella memoria di sessione del browser (<code>sessionStorage</code>, voce <code>officina_battito_fuelfinder</code>), non in un cookie, e si cancella quando chiude la scheda; sul server viene cancellato entro 6 minuti dall'ultimo segnale e restano solo conteggi per giorno, app, social e fascia di durata. L'indirizzo IP serve solo a bloccare le richieste troppo frequenti: resta nella memoria temporanea del server per circa 2 minuti e non viene salvato (come per qualsiasi pagina, Vercel, che ospita il sito, lo vede nei suoi registri tecnici). Base giuridica: legittimo interesse a misurare in forma aggregata l'uso delle versioni web (art. 6, par. 1, lett. f, GDPR); poiché il codice serve solo alle nostre statistiche aggregate, secondo le Linee guida del Garante su cookie e altri strumenti di tracciamento (10 giugno 2021) non è necessario il consenso previsto dall'art. 122 del Codice privacy. Maggiori dettagli nell'<a href="https://marketplace-apps.com/it/privacy">informativa di marketplace-apps.com</a> (punti 3.2 bis e 4).</p>
+
+<h3>2.13 Permessi Android</h3>
+<div class="table-wrap">
+<table>
+  <tr><th>Permesso</th><th>A cosa serve</th></tr>
+  <tr><td>Internet</td><td>Scaricare i prezzi, la mappa, il percorso, attivare Plus e controllare gli aggiornamenti.</td></tr>
+  <tr><td>Posizione precisa e approssimativa</td><td>Cercare i distributori vicini; nella Modalità percorso, proporre indirizzi vicini e usare la sua posizione come partenza, se lo sceglie.</td></tr>
+  <tr><td>Posizione in secondo piano e servizio in primo piano per la posizione</td><td>Solo per la Modalità guida, mentre è accesa, con notifica permanente.</td></tr>
+  <tr><td>Notifiche</td><td>Alert di prezzo e avvisi della Modalità guida.</td></tr>
+  <tr><td>Installazione di pacchetti</td><td>Proporle l'installazione dell'aggiornamento scaricato; Android le chiede sempre conferma.</td></tr>
+  <tr><td>Allarmi esatti e avvio del telefono</td><td>Dichiarati per la libreria delle notifiche; oggi l'app non programma notifiche a orario e non fa nulla all'accensione del telefono.</td></tr>
+</table>
+</div>
+
+<h3>2.14 Attività che l'app NON svolge</h3>
+<p>Nessun account o registrazione, nessuna pubblicità, nessuno strumento di analisi o di tracciamento (per i soli conteggi anonimi del sito veda la sezione 2.10), nessuna profilazione, nessuna vendita o cessione di dati, nessun backup su cloud.</p>
 
 <h2>3. Base giuridica e finalità</h2>
 <div class="table-wrap">
 <table>
   <tr><th>Finalità</th><th>Dati</th><th>Base giuridica (GDPR)</th></tr>
-  <tr><td>Mostrare i distributori vicini e le distanze stimate</td><td>Posizione (sul dispositivo)</td><td>Consenso, tramite il permesso di posizione di Android (art. 6.1.a)</td></tr>
-  <tr><td>Avvisi mentre guidi (Modalità guida, opzionale)</td><td>Posizione (sul dispositivo, anche in secondo piano)</td><td>Consenso: la accendi tu e concedi il permesso di posizione di Android (art. 6.1.a)</td></tr>
-  <tr><td>Scaricare i prezzi, mostrare la mappa, controllare gli aggiornamenti</td><td>Indirizzo IP nella richiesta di rete</td><td>Esecuzione del servizio richiesto (art. 6.1.b)</td></tr>
-  <tr><td>Preferiti, alert, storico, impostazioni</td><td>Dati inseriti da te, sul dispositivo</td><td>Esecuzione del servizio richiesto (art. 6.1.b)</td></tr>
+  <tr><td>Mostrare i distributori vicini e le distanze stimate</td><td>Posizione (sul dispositivo)</td><td>Esecuzione del servizio che richiede (art. 6.1.b): senza la posizione l'app non può trovare i distributori vicini. Il permesso di posizione di Android è la misura tecnica con cui Lei decide se e quando l'app può leggerla</td></tr>
+  <tr><td>Avvisi durante la guida (Modalità guida, opzionale)</td><td>Posizione (sul dispositivo, anche in secondo piano)</td><td>Esecuzione del servizio che richiede (art. 6.1.b): è una funzione facoltativa che accende Lei; il permesso di posizione di Android e la notifica permanente le permettono di controllarla e di spegnerla</td></tr>
+  <tr><td>Suggerire indirizzi e calcolare il tragitto (Modalità percorso, opzionale)</td><td>Testo degli indirizzi, posizione di riferimento, coordinate di partenza e arrivo, inviati a HeiGIT tramite marketplace-apps.com; IP nei registri tecnici di Vercel</td><td>Esecuzione del servizio che richiede (art. 6.1.b)</td></tr>
+  <tr><td>Scaricare i prezzi e mostrare la mappa</td><td>Indirizzo IP nella richiesta di rete</td><td>Esecuzione del servizio richiesto (art. 6.1.b)</td></tr>
+  <tr><td>Controllare e scaricare gli aggiornamenti</td><td>Indirizzo IP, tipo di client e orario nei registri tecnici dei fornitori; il sito ne ricava solo numeri per giorno senza identificativi</td><td>Legittimo interesse (art. 6.1.f) a mantenere l'app sicura e aggiornata; può opporsi (sezione 8)</td></tr>
+  <tr><td>Preferiti, alert, storico, impostazioni</td><td>Dati inseriti da Lei, sul dispositivo</td><td>Esecuzione del servizio richiesto (art. 6.1.b)</td></tr>
   <tr><td>Invio della chiave e attivazione del piano a pagamento (max 2 telefoni o 2 sessioni web per chiave)</td><td>Email nella chiave, hash della chiave, impronta del telefono, date; dati del pagamento (trattati da PayPal)</td><td>Esecuzione del contratto (art. 6.1.b)</td></tr>
-  <tr><td>Prevenzione abusi delle licenze (una prova per telefono, un cambio di telefono ogni 30 giorni, chiavi bloccate)</td><td>Solo hash e date</td><td>Legittimo interesse (art. 6.1.f); puoi opporti (sezione 8)</td></tr>
+  <tr><td>Prevenzione abusi delle licenze (una prova per telefono, un cambio di telefono ogni 30 giorni, chiavi bloccate)</td><td>Solo hash e date</td><td>Legittimo interesse (art. 6.1.f); può opporsi (sezione 8)</td></tr>
+  <tr><td>Prova dell'inizio dell'uso di Plus nella versione web, per calcolare l'eventuale rimborso proporzionale in caso di recesso entro 14 giorni (sezione 2.12)</td><td>Data di apertura delle sessioni web, hash della chiave, email nella chiave</td><td>Esecuzione del contratto (art. 6.1.b) e legittimo interesse a poter dimostrare quanta parte del servizio è stata fornita (art. 6.1.f)</td></tr>
+  <tr><td>Conteggio del tempo d'uso della versione web (sezione 2.12)</td><td>Codice casuale della scheda, nome dell'app, eventuale etichetta del link social; restano solo numeri aggregati</td><td>Legittimo interesse (art. 6.1.f) a misurare in forma aggregata l'uso della versione web; può opporsi (sezione 8)</td></tr>
 </table>
 </div>
+<p>La lettura della posizione e dell'identificativo Android dal telefono serve solo a fornirle le funzioni che chiede (distributori vicini, Modalità guida, Modalità percorso, attivazione di Plus): per questo non le chiediamo un consenso separato (art. 122 del Codice privacy, d.lgs. 196/2003). È comunque Lei a decidere, con il permesso di posizione di Android, se e quando l'app può leggere la posizione.</p>
 
 <h2>4. Per quanto tempo restano i dati</h2>
-<p>I dati sul telefono restano finché non li elimini (per esempio rimuovendo un preferito o un alert) o non disinstalli l'app. L'ultima posizione conosciuta viene sostituita a ogni nuova rilevazione. Le posizioni lette dalla Modalità guida non vengono salvate. I prezzi scaricati vengono sostituiti a ogni aggiornamento.</p>
+<p>I dati sul telefono restano finché non li elimina (per esempio rimuovendo un preferito o un alert) o non disinstalla l'app. L'ultima posizione conosciuta viene sostituita a ogni nuova rilevazione. Le posizioni lette dalla Modalità guida non vengono salvate. I prezzi scaricati vengono sostituiti a ogni aggiornamento.</p>
+<p>Modalità percorso: il nostro sito non conserva testo né coordinate; i registri tecnici di Vercel li tengono per i tempi brevi del suo servizio; HeiGIT li conserva secondo la propria informativa.</p>
 <p>Sul server delle licenze: le attivazioni restano finché la licenza è in uso e si cancellano subito con <strong>Disattiva su questo telefono</strong>, o comunque dopo 90 giorni senza rinnovo; le attivazioni della prova gratuita 12 mesi; la data dell'ultimo cambio di telefono 60 giorni; gli hash delle chiavi bloccate finché servono.</p>
+<p>Sessioni della versione web (sul database del marketplace): fino alla scadenza della licenza o finché non vengono chiuse da una più recente; si cancellano 30 giorni dopo la scadenza della licenza (quelle senza scadenza dopo 400 giorni) e subito se la chiave viene bloccata dopo un rimborso per recesso.</p>
+<p>Numeri giornalieri di aperture e aggiornamenti (per app e versione, senza IP né identificativi): non sono dati personali; restano finché servono a capire quanto sono usate le app.</p>
 
 <h2>5. Destinatari e trasferimenti</h2>
-<p>FuelFinder non trasferisce i tuoi dati a terzi in modo stabile. Le uniche comunicazioni sono quelle descritte sopra: MIMIT (download dei prezzi), OpenStreetMap (mappa), marketplace-apps.com (aggiornamenti e pagamento), Waze o Google Maps (solo se scegli di navigare) e PayPal (solo se acquisti, come titolare autonomo). Per licenza, aggiornamenti e versione web ci serviamo di fornitori che trattano i dati per nostro conto (art. 28 GDPR): <strong>Cloudflare</strong> (Stati Uniti: server delle licenze, database delle attivazioni, file degli aggiornamenti), <strong>Vercel</strong> (Stati Uniti: sito marketplace-apps.com e versione web), <strong>Supabase</strong> (database nell'Unione europea, Irlanda: sessioni della versione web), <strong>Resend</strong> (Stati Uniti: email con la chiave). Quando i dati sono trattati fuori dall'Unione europea, il trasferimento si basa sulla decisione di adeguatezza per le aziende aderenti all'EU-U.S. Data Privacy Framework (decisione di esecuzione (UE) 2023/1795, art. 45 GDPR) oppure sulle clausole contrattuali tipo (art. 46 GDPR), come indicato da ciascun fornitore.</p>
+<p>FuelFinder non trasferisce i suoi dati a terzi in modo stabile. Le uniche comunicazioni sono quelle descritte sopra: MIMIT (download dei prezzi), OpenStreetMap (mappa), HeiGIT gGmbH tramite il nostro sito (solo se usa la Modalità percorso; HeiGIT tratta i dati secondo la propria informativa), marketplace-apps.com (aggiornamenti, percorso e pagamento), Waze o Google Maps (solo se sceglie di navigare) e PayPal (solo se acquista, come titolare autonomo).</p>
+<p>Per licenza, aggiornamenti, Modalità percorso e versione web ci serviamo di fornitori che trattano i dati per nostro conto (art. 28 GDPR): <strong>Cloudflare</strong> (Stati Uniti: server delle licenze, database delle attivazioni, file degli aggiornamenti, copia dei file del MIMIT per la versione web), <strong>Vercel</strong> (Stati Uniti: sito marketplace-apps.com, compreso il passaggio del download degli aggiornamenti e delle richieste della Modalità percorso, e versione web), <strong>Supabase</strong> (database nell'Unione europea, Irlanda: sessioni della versione web), <strong>Resend</strong> (Stati Uniti: email con la chiave). Quando i dati sono trattati fuori dall'Unione europea, il trasferimento si basa sulla decisione di adeguatezza per le aziende aderenti all'EU-U.S. Data Privacy Framework (decisione di esecuzione (UE) 2023/1795, art. 45 GDPR) oppure sulle clausole contrattuali tipo (art. 46 GDPR), come indicato da ciascun fornitore.</p>
 
 <h2>6. Distribuzione</h2>
 <p>FuelFinder si scarica da marketplace-apps.com come APK firmato digitalmente dallo sviluppatore. Non è distribuita tramite Google Play. Android può mostrare un avviso di «fonte sconosciuta» perché l'app non proviene dal Play Store: è normale e non indica un problema di sicurezza.</p>
 
 <h2>7. Pagamento del piano Plus</h2>
-<p>Il pagamento avviene sul sito marketplace-apps.com tramite PayPal, fuori dall'app. FuelFinder non riceve né conserva i dati della tua carta o del tuo conto PayPal. Dopo il pagamento ricevi per email una chiave di attivazione: quando la incolli, l'app ne controlla la firma sul telefono e poi la attiva sul server delle licenze come descritto nella sezione 2.9.</p>
+<p>Il pagamento avviene sul sito marketplace-apps.com tramite PayPal, fuori dall'app. FuelFinder non riceve né conserva i dati della sua carta o del suo conto PayPal. Dopo il pagamento riceve per email una chiave di attivazione: quando la incolla, l'app ne controlla la firma sul telefono e poi la attiva sul server delle licenze come descritto nella sezione 2.11.</p>
 
-<h2>8. I tuoi diritti</h2>
+<h2>8. I suoi diritti</h2>
 <div class="table-wrap">
 <table>
   <tr><th>Diritto</th><th>Come esercitarlo</th></tr>
-  <tr><td>Accesso e portabilità</td><td>I dati sono sul tuo telefono: puoi consultarli direttamente nell'app.</td></tr>
-  <tr><td>Rettifica</td><td>Modifica alert e impostazioni direttamente nell'app.</td></tr>
-  <tr><td>Cancellazione</td><td>Elimina preferiti e alert dall'app, oppure disinstalla l'app o cancella i suoi dati dalle impostazioni di Android.</td></tr>
-  <tr><td>Revoca del consenso alla posizione</td><td>Dalle impostazioni di Android, in qualsiasi momento; la Modalità guida si spegne dall'interruttore nelle Impostazioni dell'app.</td></tr>
-  <tr><td>Reclamo</td><td>Puoi rivolgerti al Garante per la protezione dei dati personali (garanteprivacy.it).</td></tr>
+  <tr><td>Accesso e portabilità</td><td>I dati sono sul suo telefono: può consultarli direttamente nell'app.</td></tr>
+  <tr><td>Rettifica</td><td>Può modificare alert e impostazioni direttamente nell'app.</td></tr>
+  <tr><td>Cancellazione</td><td>Può eliminare preferiti e alert dall'app oppure disinstallare l'app o cancellarne i dati dalle impostazioni di Android.</td></tr>
+  <tr><td>Togliere l'accesso alla posizione</td><td>Dalle impostazioni di Android, in qualsiasi momento; la Modalità guida si spegne dall'interruttore nelle Impostazioni dell'app.</td></tr>
+  <tr><td>Opposizione (trattamenti basati sul legittimo interesse)</td><td>Scriva a <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>.</td></tr>
+  <tr><td>Reclamo</td><td>Può rivolgersi al Garante per la protezione dei dati personali (garanteprivacy.it).</td></tr>
 </table>
 </div>
-<p>Per i dati relativi all'acquisto (email, pagamento) scrivi a <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>.</p>
+<p>Per i dati relativi all'acquisto (email, pagamento) scriva a <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>.</p>
 
 <h2>9. Sicurezza</h2>
-<p>I dati dell'app sono nella memoria privata dell'applicazione, non accessibile alle altre app. Ti consigliamo di proteggere il telefono con un blocco schermo.</p>
+<p>I dati dell'app sono nella memoria privata dell'applicazione, non accessibile alle altre app. Le comunicazioni con il nostro sito, il server delle licenze e i fornitori avvengono in HTTPS. Le consigliamo di proteggere il telefono con un blocco schermo.</p>
 
 <h2>10. Minori</h2>
 <p>L'app è pensata per automobilisti e non è destinata a minori di 16 anni. Non raccogliamo consapevolmente dati di minori.</p>
 
 <h2>11. L'app non garantisce prezzi in tempo reale</h2>
-<p>I prezzi sono quelli comunicati dai gestori al MIMIT e possono differire da quelli esposti alla pompa: i dati sono aggiornati una volta al giorno e riferiti alle ore 8 del giorno precedente. Distanze e tempi di percorrenza sono stime e non un percorso calcolato. Il «costo reale» è una stima basata sul consumo che imposti tu. L'app non indica se un distributore è aperto. Gli avvisi della Modalità guida indicano il distributore più economico davanti a te secondo questi stessi dati, non garantiscono che sia aperto né che il prezzo sia ancora quello. Verifica sempre il prezzo alla pompa prima di fare rifornimento.</p>
+<p>I prezzi sono quelli comunicati dai gestori al MIMIT e possono differire da quelli esposti alla pompa: i dati sono aggiornati una volta al giorno e riferiti alle ore 8 del giorno precedente. Nella ricerca normale distanze e tempi sono stime in linea d'aria corrette, non un percorso calcolato; nella Modalità percorso il tragitto è calcolato da OpenRouteService, ma deviazioni e tempi restano stime. Il «costo reale» è una stima basata sul consumo che imposta Lei. L'app non indica se un distributore è aperto. Gli avvisi della Modalità guida e la Modalità emergenza si basano su questi stessi dati: non garantiscono che il distributore sia aperto né che il prezzo sia ancora quello. Verifichi sempre il prezzo alla pompa prima di fare rifornimento.</p>
 
 <h2>12. Modifiche all'informativa</h2>
-<p>Se questa informativa cambia in modo sostanziale, l'app ti avviserà e la data in alto sarà aggiornata.</p>
+<p>Pubblichiamo ogni nuova versione di questa informativa a questo indirizzo, con la data e la versione aggiornate in alto; dall'app la apre da Impostazioni › Informativa sulla privacy. Se un cambiamento riguarda dati inviati fuori dal telefono o nuovi destinatari, lo indichiamo anche nelle note della nuova versione dell'app.</p>
 
 <h2>13. Contatti</h2>
 <p>Per qualsiasi domanda sulla privacy: <a href="mailto:premium@marketplace-apps.com">premium@marketplace-apps.com</a>. Rispondiamo entro 30 giorni.</p>
 
-<p class="meta">Dati dei carburanti: MIMIT – Osservatorio Prezzi Carburanti, licenza IODL 2.0. Mappe: © OpenStreetMap contributors.</p>
+<p class="meta">Dati dei carburanti: MIMIT – Osservatorio Prezzi Carburanti, licenza IODL 2.0. Mappe: © OpenStreetMap contributors. Geocoding e calcolo del percorso: openrouteservice.org, HeiGIT gGmbH, su dati © OpenStreetMap contributors.</p>
 
 </main>
 </body>
